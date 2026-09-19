@@ -1,0 +1,440 @@
+﻿<html>
+<head>
+<title>Cafe</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family:Arial,sans-serif;
+}
+#aa{
+    background-color:black;
+    color:white;
+    width:100%;
+    height:80px;
+    display:flex;
+    align-items:center;
+    padding:0 60px;
+}
+#aa h1{
+    font-size:20px;
+    margin-right:auto;
+}
+
+#aa a{
+    color:white;
+    text-decoration:none;
+    margin-left:30px;
+}
+#aa a:hover{
+background-color:red;
+}
+#bb{
+    color:white;
+    width:100%;
+    height:calc(100vh - 80px);
+    background-image:url("https://t3.ftcdn.net/jpg/20/66/33/52/360_F_2066335201_zH4ZeDIxjKGJa7vJbbZRuLxqH0JNDnn3.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    padding:100px 0 0 100px;
+}
+#bb h1{
+    font-size:50px;
+    width:450px;
+    line-height:1.2;
+}
+#bb p{
+    font-size:18px;
+    width:400px;
+    line-height:1.5;
+    margin-top:25px;
+font-weight:bold;
+}
+.card,
+.card2{
+    width:150px;
+    height:60px;
+    cursor:pointer;
+    margin-top:25px;
+    margin-right:10px;
+font-weight:bold;
+background-color:black;
+}
+.card{
+    
+    color:white;
+    border:none;
+}
+.card2{
+    background-color:transparent;
+    color:white;
+    border:2px solid white;
+}
+.card:hover
+,.card2:hover{
+background-color:red;
+}
+#cc{
+background-color:white;
+color:black;
+width:100%;
+ height:calc(100vh - 80px);
+ padding:60px 20px;
+}
+#cc h1{
+font-size:20px;
+font-weight:bold;
+text-align:left;
+margin-bottom:15px;
+}
+#cc > p{
+font-size:15px;
+color:orange;
+margin-bottom:50px;
+}
+.menu{
+    display:flex;
+    flex-wrap:nowrap;
+    gap:20px;
+    width:100%;
+}
+
+.dd{
+    width:calc(25% - 15px);
+    background:white;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    overflow:hidden;
+}
+
+.dd img{
+   width:100% !important;
+    
+height:600px !important;
+    
+object-fit:cover !important;
+   
+ display:block;
+
+gap:20px;
+}
+
+.dd h1{
+    font-size:18px;
+font-weight:bold;
+    padding:20px 20px 5px;
+    line-height:1.3;
+text-align:center;
+}
+
+.dd p{
+    color:orange;
+    padding:0 10px 10px;
+font-weight:bold;
+font-size:16px;
+}
+
+
+#ff{
+    width:100%;
+    min-height:100vh;
+    background-image:url("https://images.unsplash.com/photo-1529022805552-1c88a713c1c5?fm=jpg&q=60&w=3000&auto=format&fit=crop");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    padding-top:200px;
+    padding-left:10px;
+}
+
+#ff h1{
+font-size:30px;
+text-align:left;
+}
+
+.gg{
+ background-color:#F29A4A;
+   
+ color:white;
+   
+ width:160px;
+   
+ height:45px;
+    
+cursor:pointer;
+   
+margin-top:25px;
+   
+ border:none;
+    
+font-weight:bold;
+}
+.gg:hover{
+background-color:red;
+}
+.row{
+display:flex;
+gap:35px;
+margin-top:25px;
+}
+.field{
+width:40%;
+}
+
+.field label{
+display:block;
+font-size:13px;
+margin-bottom:10px;
+}
+.field input{
+width:80%;
+height:40px;
+background-color:#3E3433;
+    
+border:none;
+    
+padding:10px;
+    
+color:white;
+padding-top:10px;
+
+}
+.ee{
+width:30%;
+height:50%;
+background-color:black;
+color:white;
+padding-left:20px;
+}
+.ee h1{
+padding-top:20px;
+}
+#kk{
+display:flex;
+flex-wrap:nowrap;
+background-color:white;
+color:black;
+width:100%;
+height:90%;
+}
+#hh{
+background-color:white;
+color:black;
+width:60%;
+
+
+}
+#hh h1{
+font-size:40px;
+font-weight:bold;
+padding-top:180px;
+width:60%;
+padding-left:240px;
+}
+#hh p{
+font-size:18px;
+width:40%;
+padding-left:240px;
+padding-top:20px;
+}
+.ii{
+    width:160px;
+    height:45px;
+    background-color:#F29A4A;
+    color:white;
+    border:none;
+    font-size:20px;
+    cursor:pointer;
+    margin-left:240px;
+    margin-top:20px;
+}
+.ii:hover{
+background-color:red;
+}
+
+.jj{
+    
+width:50%;
+    
+display:flex;
+    
+align-items:center;
+   
+ justify-content:center;
+    
+padding:40px;
+
+}
+
+
+.jj img{
+    
+width:80%;
+    
+height:650px;
+    
+object-fit:cover;
+   
+display:block;
+
+}
+footer{
+padding:60px 8%;
+background-color:#4A1912;
+color:white;
+
+}
+.footer-box{
+display:flex;
+justify-content:space-between;
+gap:50px;
+}
+.footer-logo{width:20%;}
+.footer-column:25%;
+}
+.footer-column h1{
+font-size:18px;
+margin-bottom:25px;
+
+}
+.footer-column p{
+margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+.car2{
+background-color:#4A1912;
+color:white;
+font-size:20px;
+font-weight:bold;
+text-align:center;
+width:100%;
+height:10px;
+padding-bottom:0;
+margin-bottom:0;
+}
+</style>
+</head>
+<body>
+<div id="aa">
+    <h1>Pastry World</h1>
+    <a href="#">Home</a>
+    <a href="#">Menu</a>
+    <a href="#">About Us</a>
+
+</div>
+<div id="bb">
+   <h1>
+     Good Pastry & Coffee For a Good Day
+    </h1>
+    <p>
+        Start your day on a delightful note with our freshly
+        baked pastries and premium coffee. At<br>
+        PastryWorld, we believe in crafting moments of 
+        joy with every bite and sip.
+    </p>
+    <button class="card">Let's Eat</button>
+    <button class="card2">Book a Table</button>
+</div>
+<div id="cc">
+<h1>Popular Menu</h1>
+<p>View All &rarr; </p>
+<div class="menu">
+<div class="dd">
+<img src="https://www.goodlifeeats.com/wp-content/uploads/2022/12/Pecan-Roll-Recipe-Caramel-Pecan-Rolls-720x720.jpg" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 720px; height: 298px; margin: 0px; width: 298px;" alt="Caramel Pecan Rolls" jsname="kn3ccd">
+<h1>Caramel Pecan<br> Cinnamon Roll </h1><br>
+<p>$14.00</p>
+</div>
+<div class="dd">
+<img src="https://sallysbakingaddiction.com/wp-content/uploads/2018/03/chocolate-croissants-2.jpg" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 1200px; height: 298px; margin: 0px; width: 199px;" alt="Homemade Chocolate Croissants (Pain au Chocolat)" jsname="kn3ccd">
+<h1>Chocolate Croissant<br>(Pain au Chocalat) </h1><br>
+<p>$24.00</p>
+</div>
+<div class="dd">
+<img src="https://www.nestleprofessional.in/sites/default/files/2022-07/Chocolate-Fudge.jpg" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 756px; height: 298px; margin: 0px; width: 478px;" alt="Chocolate Fudge Recipe - Nestle Professional" jsname="kn3ccd">
+<h1>Chocolate Fudge<br>Delight</h1><br>
+<p>$20.00</p>
+</div>
+<div class="dd">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfmfjGOBdT2K_E_jiQrSmSD7yx5oV7a3k-4Jsh9vNQL6PBZLj5K6szKEoL&amp;s=10" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 1440px; height: 298px; margin: 0px; width: 238px;" alt="Triple Layer Chocolate Mousse Cake Ingredients Chocolate Cake Base • 1 cup  flour (125g) • ½ cup cocoa powder (50g) • ½ cup sugar (100g) • ½ cup brown  sugar (100g) •" jsname="kn3ccd">
+<h1>Triple Layer<br>Chocolate Mousse </h1><br>
+<p>$29.00</p>
+</div>
+</div>
+</div>
+
+
+<div id="ff">
+<div class="ee">
+<form>
+
+<h1>Book a Table</h1>
+<div class="row">
+<div class="field">
+<label>First Name</label>
+<input type="text" placeholder="Enter Your Name"></div>
+<div class="field">
+<label>Last name</label>
+<input type="text"placeholder="Enter your Last Name"></div></div>
+<div class="row">
+<div class="field">
+<label>date</label>
+<input type="text" placeholder="Date(DD-MM-YYYY)" size="3">
+</div>
+<div class="field">
+<label>Person</label>
+<input type="text" placeholder=""><br>
+<button class="gg">Book a Table</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+<div id="kk">
+<div id="hh">
+<h1>About Our Pastry World</h1>
+<p>Welcome to PastryWorld, where every pastry tells a story of passion, flavor, and quality. Oue journey began with a simple mission: to create a haven for pastry and cofee lovers. Using only the finest inggredients, our skillesd bakers crafts delightful pastries that satisfy yoursweet cravings and being a smile to your day.</p>
+<br><br>
+<p>At PastryWorld, we believe in making every moment special, whether it's a morning coffee break of a cozy gathering with friends.</p>
+<button class="ii">Read More</button>
+</div>
+<div class="jj">
+<img src="https://img.magnific.com/free-photo/we-serve-best-cakes_637285-7884.jpg?semt=ais_hybrid&amp;w=740&amp;q=80" jsaction="" class="sFlh5c FyHeAf iPVvYb"  alt="Restaurant waiter Images - Free Download on Magnific (formerly Freepik)" jsname="kn3ccd">
+</div>
+      
+</div>
+<footer>
+<div class="footer-box">
+<div class="footer-logo">
+<h1>PastryWorld"</h1>
+</div>
+<div class="footer-column">
+<h1>Blogs</h1>
+<p>The Art of Perfect Pastry: Secrets Behind Our Creations<br>
+5 Coffee and Pastry Pairings to Brighten Your Day<br>
+Behind the Scenes: A Day in the Life of Our Pastry Chefs</p>
+</div>
+<div class="footer-column">
+<h1>New Items</h1>
+<p>Menu Highlights<br>
+Daily Specials<br>
+Customer Testimonials<br>
+Baking Workshops<br>
+Blog & Recipe</p>
+</div>
+<div class="footer-column">
+<h1>Social Media</h1><br>
+<p>Twitter<br>
+Facebook<br>
+Youtube<br>
+Linkedin</p>
+</div></div>
+<div class="car2">
+<h1>Copyright &copy; 2025 Web Design Mastry. All rights reserved</h1>
+</div>
+</footer>
+</body>
+</html>
